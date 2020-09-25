@@ -2,22 +2,16 @@
     :codeauthor: Bo Maryniuk <bo@suse.de>
 """
 
-# Import Python Libs
-
 import configparser
 import os
 from xml.dom import minidom
 
 import salt.modules.pkg_resource as pkg_resource
 import salt.modules.zypperpkg as zypper
-
-# Import Salt libs
 import salt.utils.files
 import salt.utils.pkg
 from salt.exceptions import CommandExecutionError
 from salt.ext import six
-
-# Import Salt Testing Libs
 from tests.support.mixins import LoaderModuleMockMixin
 from tests.support.mock import MagicMock, Mock, call, patch
 from tests.support.unit import TestCase
